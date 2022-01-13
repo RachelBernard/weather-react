@@ -1,3 +1,4 @@
+import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Weather from "./Weather";
 
@@ -8,6 +9,7 @@ function App() {
         <h1>Weather App</h1>
         <Weather />
       </header>
+      <Footer />
     </div>
   );
 }
