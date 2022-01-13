@@ -1,6 +1,7 @@
 import "bootstrap/dist/css/bootstrap.css";
 import "./App.css";
 import Weather from "./Weather";
+import Footer from "./Footer";
 
 function App() {
   return (
