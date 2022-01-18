@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import axios from "axios";
+import "bootstrap/dist/css/bootstrap.css";
 
 export default function Weather() {
   let [city, setCity] = useState(null);
@@ -59,16 +60,18 @@ export default function Weather() {
     );
   } else {
     return (
-      <div className="Search">
-        <form onSubmit={handleSubmit}>
-          {" "}
-          <input
-            type="search"
-            placeholder="Enter a city..."
-            onChange={updateCity}
-          />
-          <input type="submit" value="Search" />
-        </form>
+      <div className="container">
+        <div className="Search">
+          <form onSubmit={handleSubmit}>
+            {" "}
+            <input
+              type="search"
+              placeholder="Enter a city..."
+              onChange={updateCity}
+            />
+            <input type="submit" value="Search" />
+          </form>
+        </div>
       </div>
     );
   }
